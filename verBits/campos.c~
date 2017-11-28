@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+typedef
+struct myfloat {
+    unsigned mantisa    :23;
+    unsigned power      :8;
+	unsigned sign       :1;
+}MyFloat;
+
+struct four_chars{
+    unsigned char
+};
+void show_bits(int);
+
+long main(){
+    int intA = 10;
+    show_bits(intA);
+    printf("\n");
+    float floatA = 7.5;
+    intA = *((int*)(&floatA));
+    show_bits(intA);
+    printf("\n");
+    MyFloat MyF;
+    printf("sizeof(MyF)=%d\n",(int)sizeof(MyF));
+    return 0;
+}
+
+void show_bits(int intTemp){
+    int i;
+    for((i = 8*sizeof(int)-1);i>=0;i--){
+        printf("%d",(intTemp>>i)&0x00000001);
+        //printf("%d\n",i);
+    }
+}

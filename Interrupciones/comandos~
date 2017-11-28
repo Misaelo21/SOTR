@@ -1,0 +1,9 @@
+$ nano /proc/interrupts
+"El archivo /proc/interrupts lista el número de interrupciones por CPU por dispositivo de E/S. Muestra el número de IRQ, el número de dicha interrupción manejada por cada núcleo de CPU, el tipo de interrupción y la lista delimitada por comas de controladores registrados para recibir esa interrupción."
+
+
+grep eth0 /proc/interrupts
+dmesg |  grep -i irq
+man setjmp
+man longjmp
+
