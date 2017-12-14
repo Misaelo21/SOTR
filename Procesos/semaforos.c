@@ -22,7 +22,7 @@ int main(void){
     /*configuracion de la estuctura*/
     buf.sem_num = 0;
     buf.sem_op = 1;
-    but.sem_flg = IPC_NOWAIT;
+    buf.sem_flg = IPC_NOWAIT;
     if((semop(semid, &buf, nsems))<0){
         perror("semop()");
         exit(EXIT_FAILURE);

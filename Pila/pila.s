@@ -14,14 +14,14 @@
 
 _start:
     pushl $3            ;#push second argument
-    pushl $2            ;# push first argument
+    pushl $3            ;# push first argument
     call power          ;# call the function
     addl $8, %esp       ;# move the stack pointer back
                         ;# esp siempre debe apuntar a la cima
     pushl %eax
     
     
-    pushl $2            ;# push second argument
+    pushl $3            ;# push second argument
     pushl $5            ;# push first argument
     call power          ;# call the function
     addl $8, %esp       ;# move the stack pointer back

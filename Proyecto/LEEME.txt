@@ -1,0 +1,10 @@
+Para poder ejecutar el proyectoes necesario seguir los siguientes pasos
+
+1) Descargar el repositorio https://github.com/feilipu/Arduino_FreeRTOS_Library.git
+2) Abrir el ide de arduino
+3) En programa => incluir librerias=> librerias.zip
+4) Buscar la librería en el repositorio y aceptar
+5) Abrir proyecto y buscar proyecto.ino
+6) Depurar 
+7) Subir
+8) Programa => Monitor serial

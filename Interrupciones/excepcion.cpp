@@ -23,7 +23,7 @@ using namespace std;
 int main () {
   try
   {
-    throw 20;
+    cout << "hola" << endl;
   }
   catch (int e)
   {

@@ -14,7 +14,7 @@ _start:
                                     # the biggest
 start_loop:                         # start loop
     movl %ebx,%esi                  #
-    cmpl $data_items_end, %ecx
+    cmpl data_items(,%edi,4), %ecx
     
 loop_exit:
     # %ebx is the status code for the exit system call
